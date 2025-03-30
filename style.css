@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    font-size: 1.8em;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.empty {
+    background-color: #e9ecef;
+}
+
+/* Hover effect for calendar dates */
+td:hover:not(.empty) {
+    background-color: #d1ecf1;
+    transform: scale(1.05);
+}
+
+/* Task Item Styling */
+.task-item {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-left: 4px solid #007bff;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.form-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, select, fieldset {
+    margin: 10px 0;
+    width: 80%;
+    font-size: 1.1em;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    color: gray;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    table {
+        font-size: 1em;
+    }
+    form {
+        width: 90%;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
